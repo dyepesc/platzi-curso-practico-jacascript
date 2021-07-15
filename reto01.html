@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras</title>
+    
+</head>
+<style>
+   
+    body {
+        margin: 0px;
+        background-color: #99d0f5;
+    }
+   
+    h1 {
+        color: #70018b;
+        text-align: center;
+    }
+    h2 {
+        color: #295e4a;
+        text-align: center;
+    }
+    .header {
+    align-items: center;
+    background-color: #ff8eff;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: 0px;
+    height: 80px;
+  }
+  .header_img {
+      margin-left: 10px;
+      width: 50px;
+      
+  }
+  section{
+    /*background-color: #AB88FF;*/
+      display: flex;
+      align-items: center;
+      height: 100px;
+      width: 100%;
+  }
+  .header_img2 {
+      margin-left: 300px;
+      width: 100px;
+      
+  }
+  .p_text {
+    margin-left: 50px;
+  }
+  .input_text {
+    margin-left: 5px; 
+    width: 50px;
+  }
+ .button_text {
+    margin-left: 10px;
+ }
+ .output_resultado {
+    margin-left: 634px;
+    height: 15px;
+    width: 200px;
+ }
+</style>
+<body>
+    <header class="header">
+        <h1>Figuras geométricas de Sophie</h1>
+        <img class="header_img" src="./geometria.png" alt="">
+    </header>
+    <h2>Primer taller de Daniel</h2>
+    
+    <section>
+        <img class="header_img2" src="./cuadrado.png" alt=" ">
+        <p class="p_text">Ingresa el lado del cuadrado</p>
+        <input id="InputCuadrado" class="input_text" type="number">
+        <button class="button_text" type="button" onclick="calcularAreaCuadrado()">
+            Calcular área
+        </button>
+            
+    </section>
+    <textarea id="Resultado" class="output_resultado" type="number">
+    </textarea>
+        <script src="./figuras2.js"></script>
+</body>
+</html>
